@@ -3,7 +3,7 @@ import './OpenGrid.css';
 
 export default function OpenGrid() {
   // State variables
-  const [playerNames, setPlayerNames] = useState(['Lisa', 'Rebecca', 'Michael', 'Willie', 'Shivangi', 'Chieh']);
+  const [playerNames, setPlayerNames] = useState(['Player 1', 'Player 2', 'Player 3', 'Player 4', 'Player 5']);
   const [newPlayerInput, setNewPlayerInput] = useState('');
   const [columns, setColumns] = useState(8);
   const [minPlayers, setMinPlayers] = useState(1);
