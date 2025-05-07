@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/OpenGrid/precache-manifest.c8f027ba6cbb718f54a62d412e8b8bc7.js"
+  "/OpenGrid/precache-manifest.9db450455d3cda21ff6787e07d3ffcb3.js"
 );
 
 self.addEventListener('message', (event) => {
