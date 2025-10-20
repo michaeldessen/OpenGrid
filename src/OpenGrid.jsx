@@ -19,7 +19,6 @@ export default function OpenGrid() {
   const [progressBarPosition, setProgressBarPosition] = useState(0);
   const [pacingMode, setPacingMode] = useState('even'); // 'even' or 'uneven'
   const [columnDurations, setColumnDurations] = useState([]);
-  const [sliderCompleted, setSliderCompleted] = useState(false);
   
   const sliderInterval = useRef(null);
   const fileInputRef = useRef(null);
@@ -208,7 +207,6 @@ export default function OpenGrid() {
   const startSlider = () => {
     setProgressBarPosition(0);
     setSliderActive(true);
-    setSliderCompleted(false);  // Reset this when starting the slider
     generateColumnDurations();
   };
 
@@ -221,7 +219,6 @@ export default function OpenGrid() {
   const resetSlider = () => {
     setProgressBarPosition(0);
     setSliderActive(false);
-    setSliderCompleted(false);  // Reset this when resetting the slider
   };
 
   // Check if a cell should display player cue
@@ -247,7 +244,6 @@ export default function OpenGrid() {
         if (elapsedTime >= totalDurationSeconds) {
   setProgressBarPosition(100);
   setSliderActive(false);
-  setSliderCompleted(true);
   clearInterval(sliderInterval.current);
   return;
 }
