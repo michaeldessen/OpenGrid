@@ -1,5 +1,5 @@
 # OpenGrid
-OpenGrid is a simple tool to orchestrate open improvisations for a group of musicians, with some timing and cueing controls.
+OpenGrid is a simple tool to orchestrate open improvisations for a group of musicians, with some timing and cueing controls. You can try it here: https://michaeldessen.github.io/OpenGrid/
 
 ## How to use
 
